@@ -28,37 +28,21 @@ body {
 }
 
 .card {
-  margin: 20px auto;
+  margin: 30px auto;
   width: 90%;
   max-width: 700px;
-  perspective: 1000px;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  padding: 20px;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  backface-visibility: hidden;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   padding: 30px;
   background: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
 }
 
-.card-back {
-  transform: rotateY(180deg);
-  background: #f5f0e1;
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .icon {
@@ -73,7 +57,7 @@ body {
 }
 
 .timeline li {
-  margin: 15px 0;
+  margin: 12px 0;
   font-size: 1.1em;
   display: flex;
   align-items: center;
@@ -98,7 +82,7 @@ body {
 
 .btn:hover {
   background: #8c3f3f;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .quote {
@@ -107,18 +91,23 @@ body {
   color: #444;
 }
 
+#countdown {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #b45b5b;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .cursive { font-size: 1.8em; }
   .bold { font-size: 1em; }
-  .card-front, .card-back { padding: 20px; }
-}
-
-.card-inner {
-  transform: rotateY(180deg); /* start flipped */
-}
-
-.card.visible .card-inner {
-  transform: rotateY(0deg); /* flip into view when visible */
-  transition: transform 1s ease;
+  .card { padding: 20px; }
 }

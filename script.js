@@ -20,7 +20,7 @@ function updateCountdown() {
 }
 setInterval(updateCountdown, 1000);
 
-// Scroll Reveal + Flip Effect
+// Scroll Reveal (vertical slide-in)
 const cards = document.querySelectorAll(".card");
 
 window.addEventListener("scroll", () => {
@@ -28,22 +28,6 @@ window.addEventListener("scroll", () => {
     const rect = card.getBoundingClientRect();
     if (rect.top < window.innerHeight - 100) {
       card.classList.add("visible");
-      // Add a subtle flip animation when revealed
-      card.querySelector(".card-inner").style.transform = "rotateY(0deg)";
     }
-  });
-});
-
-// Icon Glow Effect on Hover
-const icons = document.querySelectorAll(".icon");
-icons.forEach(icon => {
-  icon.addEventListener("mouseenter", () => {
-    icon.style.color = "#ff6f61";
-    icon.style.transform = "scale(1.2)";
-    icon.style.transition = "all 0.3s ease";
-  });
-  icon.addEventListener("mouseleave", () => {
-    icon.style.color = "#b45b5b";
-    icon.style.transform = "scale(1)";
   });
 });
