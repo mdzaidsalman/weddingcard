@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asjad and Safia</title>
-    <link rel="stylesheet" href="css/pract2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-
-<!--Internal Css type file-->
-<style>
-  body{
-    margin: 0;
-    padding: 0;
-    all: initial;
-    font-family: 'Marck script', cursive;
-    background-color: rgb(17, 15, 124);
-}
-
-.container{
-    background-color: rgb(11, 10, 105);
-    height: auto
-}
-
-.contents{
-    color: rgb(211, 177, 26);
-    font-size: 1.2rem;
-    padding: 40px;
-    padding-bottom: 40px;
-    overflow-wrap: break-word;
-    text-align: center;
-}
-.groom{
-    color: rgb(211, 177, 26);
-    text-align: center;
-    font-size: 2rem;
-    padding: 10px;
-}
-.with{
-    text-align: center;
-    color: rgb(211, 177, 26);
-}
-.bride{
-    color: rgb(211, 177, 26);
-    text-align: center;
-    font-size: 2rem;
-    padding: 10px;
-}
-
-.family{
-    color: rgb(211, 177, 26); 
-    text-align: center;
-    font-size: 1.2rem;
-    overflow-wrap: break-word;
-    padding: 20px;
-    padding-top: 0px;
-}
-.programmes{
-    color: rgb(211, 177, 26); 
-    text-align: center;
-    overflow-wrap: break-word;
-    padding: 10px;
-    font-size: 1.2rem;
-    padding-top: 0px;
-}
-.rsvp{
-    color: rgb(211, 177, 26); 
-    text-align: center;
-    overflow-wrap: break-word;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.rsvps{
-    padding-bottom: 30px;
-    color: rgb(211, 177, 26); 
-    text-align: center;
-}
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation - Arjun & Shruti</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <div class="contents">Mrs. Shahnaz and Mr. Akhtar Alam request your 
-        gracious presence on the wedding 
-      ceremony of their Daughter.
+  <!-- Hero Section -->
+  <section class="card flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <i class="fa-solid fa-ring icon"></i>
+        <h1 class="cursive">Wedding Invitation</h1>
+        <h2 class="cursive">Arjun Rana <span class="small">(son of Narayan Rana)</span></h2>
+        <h2 class="amp">&</h2>
+        <h2 class="cursive">Shruti Kumari <span class="small">(daughter of Prateek Kumar)</span></h2>
+        <p class="bold">Date: 15 July 2026</p>
+        <p class="bold">Venue: Hotel Rameshwaram, Jhumri Telaiya</p>
+        <div id="countdown"></div>
+      </div>
+      <div class="card-back">
+        <p class="quote">“A celebration of love and togetherness.”</p>
+      </div>
     </div>
-    <div class="groom"> <a href="safia.html" style="text-decoration:underline; 
-    text-decoration-style: none; color: rgb(63, 189, 14);" > Safia Naaz </a></div>
-    <div class="with">Weds</div>
-    <div class="bride"><a href="asjad.html" style="text-decoration:underline;
-     color: rgb(63, 189, 14);">Mohammad Asjad jamal</a></div>
-    <div class="family">Son of Mrs.Talat Mehjabin and Late Mr.Jamaluddin </div>
-    <hr noshade="" color="white" width="200px">
-    <div class="programmes">Arrival of Baraat </div>
-    <div class="programmes">On Friday, 12th, November, 2021 </div>
-    <div class="programmes">11 o'clock in the Morning</div>
-    <div class="programmes">At Ansar Nagar Jama Masjid</div>
-    <div class="programmes">Ansar Nagar, Kamalpur, Nawada</div>
-    <hr noshade="" color="white" width="300px">
-    <div class="rsvp">With best compliments from:-</div>
-    <div class="rsvps">Abu Talha, Abu Anus, Junaid, Affan and all relatives</div>
-    
-  </div> 
-    
+  </section>
+
+  <!-- Programme Timeline -->
+  <section class="card flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <i class="fa-solid fa-calendar-days icon"></i>
+        <h2 class="cursive">Programme Details</h2>
+        <ul class="timeline">
+          <li><i class="fa-solid fa-sun"></i> <span class="bold">Haldi:</span> 12 July, 4 PM at residence</li>
+          <li><i class="fa-solid fa-leaf"></i> <span class="bold">Mehendi:</span> 13 July, 5 PM</li>
+          <li><i class="fa-solid fa-moon"></i> <span class="bold">Nikah:</span> 14 July, 8 PM</li>
+          <li><i class="fa-solid fa-champagne-glasses"></i> <span class="bold">Reception:</span> 15 July, 7 PM</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <p class="quote">“Mark your calendars for joy!”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue Map -->
+  <section class="card flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <i class="fa-solid fa-location-dot icon"></i>
+        <h2 class="cursive">Venue Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.123456789!2d85.529!3d24.290!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1sHotel%20Rameshwaram%20Jhumri%20Telaiya%20825409!5e0!3m2!1sen!2sin!4v1700000000000"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Rameshwaram+Jhumri+Telaiya+825409" target="_blank" class="btn">Get Directions</a></p>
+      </div>
+      <div class="card-back">
+        <p class="quote">“See you at Hotel Rameshwaram.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Note -->
+  <section class="card flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <i class="fa-solid fa-heart icon"></i>
+        <h2 class="cursive">Special Note</h2>
+        <p class="quote">“Mere Mamu ke shaadi me jalul se jalul aana.” – Hammad</p>
+      </div>
+      <div class="card-back">
+        <p class="quote">“Your presence will make it complete.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="card flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <i class="fa-solid fa-phone icon"></i>
+        <h2 class="cursive">RSVP</h2>
+        <p>Contact: Arjun, Rohit, Zeeshan, Mikel, Arif</p>
+      </div>
+      <div class="card-back">
+        <p class="quote">“Please confirm your presence.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="card flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <p class="cursive">With love, Arjun & Shruti</p>
+      </div>
+      <div class="card-back">
+        <p class="quote">“Forever begins here.”</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
